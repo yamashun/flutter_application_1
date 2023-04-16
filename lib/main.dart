@@ -104,7 +104,11 @@ class _MyHomePageState extends State<MyHomePage> {
             )
           ],
         )
-      ],)
+      ],),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => { print("ボタンが押されたよ") },
+        child: const Icon(Icons.timer),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
